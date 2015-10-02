@@ -13,7 +13,7 @@ api = twitter.Api(
 # print api.VerifyCredentials()
 
 generator = markov.MarkovMachine()
-generator.read_files(['green-eggs.txt'])
+generator.read_files(['zen_of_python.txt', 'gettysburg.txt'])
 tweet = generator.make_text()
 
 status = api.PostUpdate(tweet)
